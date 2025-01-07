@@ -34,31 +34,6 @@ This data was extracted from the census bureau database found at http://www.cens
     Naive-Bayes: 83.88+-0.30
     NBTree     : 85.90+-0.28<br>
 
-
- Following algorithms were later run with the following error rates,
-    all after removal of unknowns and using the original train/test split.
-    All these numbers are straight runs using MLC++ with default values.<br>
-
-    Algorithm               Error<br>
- -- ----------------        -----<br>
- 1  C4.5                    15.54<br>
- 2  C4.5-auto               14.46<br>
- 3  C4.5 rules              14.94<br>
- 4  Voted ID3 (0.6)         15.64<br>
- 5  Voted ID3 (0.8)         16.47<br>
- 6  T2                      16.84<br>
- 7  1R                      19.54<br>
- 8  NBTree                  14.10<br>
- 9  CN2                     16.00<br>
- 10 HOODG                   14.82<br>
- 11 FSS Naive Bayes         14.05<br>
- 12 IDTM (Decision table)   14.46<br>
- 13 Naive-Bayes             16.12<br>
- 14 Nearest-neighbor (1)    21.42<br>
- 15 Nearest-neighbor (3)    20.35<br>
- 16 OC1                     15.04<br>
- 17 Pebls                   Crashed.  Unknown why (bounds WERE increased)<br>
-
  Conversion of original data as follows:<br>
  1. Discretized agrossincome into two ranges with threshold 50,000.<br>
  2. Convert U.S. to US to avoid periods.<br>
